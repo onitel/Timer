@@ -92,7 +92,7 @@ function move() {
 
 // Sound function
 const sound = () => {
-  if(zl == 10){
+  if(h == 599){
     music3.play();
   } else if(h == 59 || h == 119 || h == 179 || h == 239 || h == 299 || h == 359 || h == 419 || h == 479 || h == 539){ //ver
     music2.play();
