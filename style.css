@@ -71,7 +71,7 @@ body {
   border-radius: 5px;
   border: 2px solid rgba(135, 135, 135,0.5);
   font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.0);
   margin-bottom: 10px;
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 #stop:active, #start:active, #restart:active {
-  box-shadow: inset 0px 0px 14px -9px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 14px -7px rgba(0,0,0,0.75);
 }
 
 #stop:focus, #start:focus, #restart:focus {
