@@ -35,9 +35,9 @@ const zero = 0;
 const bee = () => {
  if (z == 4){return};
     const muu = () => {
-        sound();
         if (zl > 9){return};
         if (z == 4){return};
+        sound();
         m = n++;
         if (m > 59){min()};
         console.log(`sec`,m);
