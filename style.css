@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+}
+body {
+  display:flex;
+  justify-content: center;
+  background: radial-gradient(rgb(216, 253, 253), rgb(126, 223, 247));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  z-index: -1;
+}
+
+#container {
+  margin-top: 130px;
+}
+
+/* Text container */
+#containertxt {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Timer container */
+#containera{
+  width: 200px;
+  font-size: 2rem;
+  border: 5px solid rgba(135, 135, 135,0.5);
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+/* Time container */
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgba(135, 135, 135,0.5);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Color progress bar */
+#myBar {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+#pnts {
+  margin-left: 6px;
+  margin-right: 4px;
+}
+
+/* Buttons */
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+#stop, #start, #restart {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(135, 135, 135,0.5);
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+#stop:hover, #start:hover, #restart:hover {
+  background-color: rgba(51, 204, 255, 0.4);
+}
+
+#stop:active, #start:active, #restart:active {
+  box-shadow: inset 0px 0px 14px -9px rgba(0,0,0,0.75);
+}
+
+#stop:focus, #start:focus, #restart:focus {
+  outline: none;
+}
+
+/* Volume audio controls */
+#volume {
+  display: flex;
+  border-bottom: 0px solid red;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#volume a .svg {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.svg:hover {
+  filter: invert(47%) sepia(80%) saturate(2878%) hue-rotate(186deg) brightness(104%) contrast(97%);
+}
+
+.svg:active {
+  filter: invert(17%) sepia(80%) saturate(1878%) hue-rotate(290deg) brightness(64%) contrast(197%);
+}
+
+.imageAnchor:focus img {
+  filter: invert(17%) sepia(80%) saturate(1878%) hue-rotate(290deg) brightness(64%) contrast(197%);
+}

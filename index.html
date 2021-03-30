@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+          	
+<div id="container">
+
+      <!-- Simple text -->
+<div id="containertxt">
+<h1> 10 min timer </h1>    
+</div>
+  
+<div id="containera"> 
+      <!-- Time container -->
+<div class="time">
+      <h1 id="min">0</h1>
+      <h2 id="pnts">:</h2>
+      <h1 id="sec">0</h1>
+      <div id="myBar"></div>
+</div>	
+
+      <!-- Buttons container -->
+<div class="button">
+      <button id="start">Start</button> 
+       <button id="stop">Stop</button>
+    <button id="restart">Restart</button>
+</div>
+
+      <!-- Audio control SVG -->
+<div id="volume">
+        <a class="imageAnchor" href="#" onclick="this.focus()">
+      <img id="full" class="svg" src="image.svg" onerror="this.onerror=null; this.src='bx-volume-full.svg';"/>
+        </a>
+        <a class="imageAnchor" href="#" onclick="this.focus()">
+      <img id="low" class="svg" src="image.svg" onerror="this.onerror=null; this.src='bx-volume-low.svg';"> 
+        </a>
+        <a class="imageAnchor" href="#" onclick="this.focus()"> 
+      <img id="lower" class="svg" src="image.svg" onerror="this.onerror=null; this.src='bx-volume.svg';"> 
+        </a>
+        <a class="imageAnchor" href="#" onclick="this.focus()">
+      <img id="mute" class="svg" src="image.svg" onerror="this.onerror=null; this.src='bx-volume-mute.svg';">
+        </a>
+</div>
+
+</div> 
+
+</div> 
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
