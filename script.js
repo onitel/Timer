@@ -65,25 +65,25 @@ function move() {
       h = m + (zl * 60);                        
       elem.style.height = (h * 0.1667) + "%";
       if(h < 60){
-        elem.style.backgroundColor = (`#1d59ff`);  // 1
+        elem.style.backgroundColor = (`#1d59ff`);  // 1s
       } else if(h >= 60 && h < 120){
-        elem.style.backgroundColor = (`#68c4fa`);  // 2
+        elem.style.backgroundColor = (`#68c4fa`);  // 2s
       } else if(h >= 120 && h < 180){
-        elem.style.backgroundColor = (`#68faf0`);  // 3
+        elem.style.backgroundColor = (`#68faf0`);  // 3s
       } else if(h >= 180 && h < 240){
-        elem.style.backgroundColor = (`#68fab7`);  // 4
+        elem.style.backgroundColor = (`#68fab7`);  // 4s
       } else if(h >= 240 && h < 300){
-        elem.style.backgroundColor = (`#4CAF50`);  // 5
+        elem.style.backgroundColor = (`#4CAF50`);  // 5s
       } else if(h >= 300 && h < 360){
-        elem.style.backgroundColor = (`#a5fa68`);  // 6
+        elem.style.backgroundColor = (`#a5fa68`);  // 6s
       } else if(h >= 360 && h < 420){
-        elem.style.backgroundColor = (`#900080`);  // 7
+        elem.style.backgroundColor = (`#900080`);  // 7s
       } else if(h >= 420 && h < 480){
-        elem.style.backgroundColor = (`#e9fa68`);  // 8
+        elem.style.backgroundColor = (`#e9fa68`);  // 8s
       } else if(h >= 480 && h < 540){
-        elem.style.backgroundColor = (`#ff6969`);  // 9
+        elem.style.backgroundColor = (`#ff6969`);  // 9s
       } else if(h >= 540 && h < 600){
-        elem.style.backgroundColor = (`#faa668`);  // 10
+        elem.style.backgroundColor = (`#faa668`);  // 10s
       } else {
         elem.style.backgroundColor = (`#ff0000`);  // fin
       }
@@ -94,7 +94,7 @@ function move() {
 const sound = () => {
   if(h == 599){
     music3.play();
-  } else if(h == 59 || h == 119 || h == 179 || h == 239 || h == 299 || h == 359 || h == 419 || h == 479 || h == 539){ //ver
+  } else if(h == 59 || h == 119 || h == 179 || h == 239 || h == 299 || h == 359 || h == 419 || h == 479 || h == 539){ 
     music2.play();
   } else {music1.play();}
 }
@@ -106,7 +106,7 @@ z = 4;
 
 // Start function
 const start = () => {
-if (z == 3 && m > 0){
+if (z == 3 && m > 0){      // for seconds function to start only once
   return;
 } else {
   z = 3;
@@ -134,7 +134,7 @@ const resta= () => {
    minut.innerHTML = minut.innerHTML.replace(zl, zero);
   }
   zl = 0;
-  move();                                    // because everything is reset, this will reset progress as well
+  move();  // because everything is reset, starting progres function again will reset progress as well
 }
 
 // Volume functions
